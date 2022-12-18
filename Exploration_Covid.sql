@@ -1,4 +1,4 @@
-  -- Select Data that we are going to be using:
+  -- Select Data that we are going to be used:
 SELECT
   location,
   date,
@@ -40,8 +40,7 @@ SELECT
   (total_cases/population)*100 AS DeathPercentage
 FROM
   `fluid-crane-362215.Covid_project.CovidDeaths`
-WHERE
-  location LIKE '%Vietnam%'
+-- WHERE location LIKE '%Vietnam%'
 ORDER BY
   1,
   2;
@@ -213,3 +212,4 @@ ORDER BY
   3;
 
 -- Create View to store data for later visualization:
+-- I justed uploaded this dataset named Percent Population Vaccinated in this project.
